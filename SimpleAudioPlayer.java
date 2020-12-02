@@ -51,9 +51,11 @@ public class SimpleAudioPlayer
         return map.get(choice);
     }
     public static void viewhistory(){
-        while(history.size()!=0){
-            System.out.println(history.pop());
-        }
+	    
+	Stack hist1 = ( Stack ) history.clone();
+	while(hist1.size()!=0){
+	    System.out.println(hist1.pop());
+	}
     }
 	public static void main(String[] args) 
 	{ 
